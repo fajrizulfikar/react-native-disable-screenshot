@@ -16,8 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-disable-screenshot.git",
-    "baseUrl": "https://github.com/github_account/react-native-disable-screenshot"
+    "url": "git+https://github.com/fajrizulfikar/react-native-disable-screenshot.git",
+    "baseUrl": "https://github.com/fajrizulfikar/react-native-disable-screenshot"
   },
   "keywords": [
     "react-native"
