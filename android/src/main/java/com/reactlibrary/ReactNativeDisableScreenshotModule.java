@@ -25,32 +25,32 @@ public class ReactNativeDisableScreenshotModule extends ReactContextBaseJavaModu
     }
 
     @ReactMethod
-    public void start(Promise promise) {
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          try {
-            getCurrentActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
-            promise.resolve("Done. Screenshot taking locked.");
-          } catch(Exception e) {
-            promise.reject(DISABLE_SCREENSHOT_ERROR_CODE, "Forbid screenshot taking failure.");
-          }
-        }
-      });
+    public void start(final Promise promise) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    getCurrentActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+                    promise.resolve("Disable screenshot success.");
+                } catch (Exception e) {
+                    promise.reject(DISABLE_SCREENSHOT_ERROR_CODE, "Failed disable screenshot.");
+                }
+            }
+        });
     }
 
     @ReactMethod
-    public void stop(Promise promise) {
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          try {
-            getCurrentActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
-            promise.resolve("Done. Screenshot taking unlocked.");
-          } catch (Exception e) {
-            promise.reject(DISABLE_SCREENSHOT_ERROR_CODE, "Allow screenshot taking failure.");
-          }
-        }
-      });
+    public void stop(final Promise promise) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    getCurrentActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
+                    promise.resolve("Enable screenshot success.");
+                } catch (Exception e) {
+                    promise.reject(DISABLE_SCREENSHOT_ERROR_CODE, "Failed enable screenshot.");
+                }
+            }
+        });
     }
   }
