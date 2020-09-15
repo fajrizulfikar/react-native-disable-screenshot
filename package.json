@@ -1,5 +1,5 @@
 {
-  "name": "react-native-react-native-disable-screenshot",
+  "name": "react-native-disable-screenshot",
   "title": "React Native React Native Disable Screenshot",
   "version": "1.0.0",
   "description": "TODO",
@@ -9,15 +9,15 @@
     "android",
     "index.js",
     "ios",
-    "react-native-react-native-disable-screenshot.podspec"
+    "react-native-disable-screenshot.podspec"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-react-native-disable-screenshot.git",
-    "baseUrl": "https://github.com/github_account/react-native-react-native-disable-screenshot"
+    "url": "git+https://github.com/github_account/react-native-disable-screenshot.git",
+    "baseUrl": "https://github.com/github_account/react-native-disable-screenshot"
   },
   "keywords": [
     "react-native"
