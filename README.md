@@ -13,6 +13,9 @@
 ```javascript
 import ReactNativeDisableScreenshot from "react-native-disable-screenshot";
 
-// TODO: What to do with the module?
-ReactNativeDisableScreenshot;
+// disable screenshot
+ReactNativeDisableScreenshot.start();
+
+// enable screenshot
+ReactNativeDisableScreenshot.stop();
 ```
