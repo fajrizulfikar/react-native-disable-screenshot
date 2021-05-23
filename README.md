@@ -19,3 +19,5 @@ ReactNativeDisableScreenshot.start();
 // enable screenshot
 ReactNativeDisableScreenshot.stop();
 ```
+
+> **_NOTE:_** Currently this plugin only work for Android device
